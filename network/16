@@ -1,0 +1,3 @@
+Il faut ajouter l'adresse IP 46.19.122.85 dans le fichier /etc/hosts commme ceci:
+
+46.19.122.85	intra.42.fr
