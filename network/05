@@ -1,1 +1,1 @@
-lookup slash16.org | grep Address | tail -n 1 | cut -d " " -f 2
+dig slash16.org +short | head -n 1
