@@ -1,1 +1,1 @@
-sudo iptables -S
+sudo iptables -L

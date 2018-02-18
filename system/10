@@ -1,1 +1,1 @@
-df
+sudo /sbin/fdisk -l
