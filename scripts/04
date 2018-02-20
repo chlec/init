@@ -1,0 +1,13 @@
+#!/bin/sh
+
+if [ ! -f .md5cron ]
+then
+	md5sum /etc/crontab > .md5cron
+	exit 0;
+fi;
+
+if [ $(md5sum /etc/crontab) -ne $(cat .md5cron) ]
+then
+	md5sum /etc/crontab > .md5cron
+	echo "/etc/crontab has been modified!" | mail root
+fi;
